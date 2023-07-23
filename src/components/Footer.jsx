@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="col-12 d-flex">
               <div className="col-8 text-center mb-3">
                 <h3>Signup for News-Letter</h3>
-                <p>To gets update and all<Link>Special Offers</Link></p>
+                <p>To gets update and all<Link>Special offers</Link></p>
               </div>
               <div className="col-4">
               <div className="input-group mb-3">
