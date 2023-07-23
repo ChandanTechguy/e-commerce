@@ -198,3 +198,18 @@ border-radius: 10px;
   color: var(--primary1);
   border: 1px solid var(--primary2);
 }
+
+.button-blog{
+  padding: 10px 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  color:black;
+  background: var(--light);
+  transition: 0.5s ease;
+  border: 1px solid transparent
+}
+.button-blog:hover{
+  background: transparent;
+  color: var(--primary1);
+  border: 1px solid var(--primary2);
+}

@@ -124,10 +124,14 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="blogs p-5">
+      <section className="blogs p-3 mb-2">
         <div className="container-xxl">
           <div className="row">
-            <Blogs/>
+            <div className="text-center mb-3">
+              <h1>Whats Our Customers Say</h1>
+              <p>Our customer never miss a bit on providing feedbacks</p>
+            </div>
+            <Blogs />
           </div>
         </div>
       </section>
