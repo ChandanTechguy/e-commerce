@@ -1,9 +1,59 @@
 import React from 'react'
+import blog1 from "../assets/blog/blog-1.jpg"
+import blog2 from "../assets/blog/blog-2.jpg"
+import blog3 from "../assets/blog/blog-3.jpg"
+import blog4 from "../assets/blog/blog-4.jpg"
 
 const blogs = () => {
   return (
     <>
-      
+      <div className="col-3">
+        <div className="card">
+          <img src={blog1} alt="" className='card-img-top img-fluid mb-3'/>
+          <div className="card-body">
+            <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam ab ratione eligendi</p>
+            <button className="button-blog">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-3">
+        <div className="card">
+          <img src={blog2} alt="" className='card-img-top img-fluid mb-3'/>
+          <div className="card-body">
+            <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam ab ratione eligendi</p>
+            <button className="button-blog">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-3">
+        <div className="card">
+          <img src={blog3} alt="" className='card-img-top img-fluid mb-3'/>
+          <div className="card-body">
+            <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam ab ratione eligendi</p>
+            <button className="button-blog">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-3">
+        <div className="card">
+          <img src={blog4} alt="" className='card-img-top img-fluid mb-3'/>
+          <div className="card-body">
+            <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam ab ratione eligendi</p>
+            <button className="button-blog">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
