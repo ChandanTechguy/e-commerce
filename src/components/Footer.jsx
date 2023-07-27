@@ -17,19 +17,19 @@ const Footer = () => {
             <div className="col-12 d-flex">
               <div className="col-8 text-center mb-3">
                 <h3>Signup for News-Letter</h3>
-                <p>To gets update and all<Link>Special offers</Link></p>
+                <p>To gets update and all<Link> Special offers</Link></p>
               </div>
               <div className="col-4">
               <div className="input-group mb-3">
                 <input
                   type="text"
                   className="form-control p-2"
-                  placeholder="search here..."
+                  placeholder="Enter email here"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
                 />
                 <button className="input-group-text" id="basic-addon2">
-                  Search
+                  Subscribe
                 </button>
               </div>
               </div>
@@ -91,14 +91,18 @@ const Footer = () => {
               <h3 className="mb-3">Install Apps</h3>
               <div className="footer-details">
                 <p>Available On Google Play Services & App Store</p>
-                <div className="pay">
+                <div className="pay d-flex">
+                  <div>
                   <Link>
-                    {/* {" "} */}
                     <img src={google} alt="" className="img-fluid p-4 my-3" />
                   </Link>
-                  <Link>
+                  </div>
+                 <div>
+                 <Link>
                     <img src={download} alt="" className="img-fluid p-4 my-3" />
                   </Link>
+                  </div>
+                 </div>
                  <p className="mb-3">Payment Methods</p>
                  <Link className="pay">
                     <img src={cards} alt="" className="img-fluid p-3" />
@@ -118,7 +122,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
       </footer>
     </>
   );

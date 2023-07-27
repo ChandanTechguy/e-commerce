@@ -9,11 +9,13 @@ import About from "../src/pages/About";
 import Cart from "../src/pages/Cart"
 import Login from "../src/pages/Login"
 import Wishlist from '../src/pages/Wishlist'
+import ShopContext from './components/ShopContext'
 
 function App() {
 
   return (
     <>
+    <ShopContext>
     <BrowserRouter>
      <Routes>
       <Route path='/' element={<Layout/>}>
@@ -28,6 +30,7 @@ function App() {
       </Route>
      </Routes>
      </BrowserRouter> 
+    </ShopContext>
     </>
   )
 }

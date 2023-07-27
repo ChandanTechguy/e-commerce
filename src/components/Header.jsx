@@ -68,22 +68,23 @@ const Header = () => {
             </div>
             <div className="nav-links-nav col-3 d-flex align-items-center justify-content-around">
               <Link to={"wishlist"} className={location.pathname === "/wishlist" ? "inactive" : "active"}>
+                <div></div>
                 <div className="d-flex">
-                <span><HiOutlineInboxIn className="fs-3 mx-2"/></span>
-                <p><strong>Wishlist</strong></p>
+                <span><HiOutlineInboxIn className="fs-2 mx-auto"/></span>
+                {/* <p><strong>Wishlist</strong></p> */}
                 </div>
                 </Link>
                 <Link to={"login"} className={location.pathname === "/login" ? "inactive" : "active"}>
                   <div className="d-flex">
-                  <span><VscAccount className="fs-3 mx-2"/></span>
-                <p><strong>Account</strong></p>
+                  <span><VscAccount className="fs-2 mx-auto"/></span>
+                {/* <p><strong>Account</strong></p> */}
                   </div>
                   
                 </Link>
                 <Link to={"cart"} className={location.pathname === "/cart" ? "inactive" : "active"}>
                   <div className="d-flex">
-                  <span><CgShoppingCart className="fs-3 mx-2"/></span>
-                <p><strong>Cart</strong></p>
+                  <span><CgShoppingCart className="fs-2 mx-auto"/></span>
+                {/* <p><strong>Cart</strong></p> */}
                   </div>
                 </Link>
               </div>
