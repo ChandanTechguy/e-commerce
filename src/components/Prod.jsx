@@ -9,12 +9,14 @@ const Prod = (props) => {
   const CartItemCount = cartItems[id];
   return (
     <>
-      <div key={id} className="col-3">
+      <div key={id} className="col-3 mb-2">
         <div className="card">
+          <div className="p-2">
           <img src={image} alt="" className="img-fluid card-img-top" />
+          </div>
           <div className="card-details p-3">
             <span>{brand}</span>
-            <h4 className="my-3">{name}</h4>
+            <h4 className="my-2">{name}</h4>
             <ReactStars
               count={5}
               edit={false}
@@ -22,22 +24,27 @@ const Prod = (props) => {
               size={24}
               activeColor="#cca27e"
             />
-            <p className="price mb-3">
+            <p className="price mb-2">
               {price}
               <span className="text-danger">
                 <strike> &nbsp;{price * 2}</strike>
               </span>
             </p>
             <div className="d-flex align-items-center justify-content-around mb-2">
-              <Link
-                classname="view-button"
+             <div className="col-6 d-flex align-items-center justify-content-around">
+             <Link
+                className="view-button"
                 onClick={() => viewProductDetails(id)}
               >
                 View Deatils
               </Link>
-              <button className="add-btn" onClick={() => addToCart(id)}>
+             </div>
+            <div className="col-6 d-flex align-items-center justify-content-around">
+            <button className="add-btn" onClick={() => {addToCart(id);
+               event.target.classlist.toggle("text:sucess")} }>
                 Add To Cart {CartItemCount > 0 && `(${CartItemCount})`}
               </button>
+            </div>
             </div>
           </div>
         </div>
