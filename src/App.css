@@ -258,3 +258,9 @@ border-radius: 10px;
 .red{
   color: var(--primary);
 }
+
+/* cart */
+
+.input{
+  padding: 12px;
+}
